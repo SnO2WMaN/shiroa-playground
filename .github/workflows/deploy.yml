@@ -32,7 +32,7 @@ jobs:
         run: |
           shiroa --version
       - name: Build Book
-        run: shiroa build
+        run: shiroa build --path-to-root /shiroa-playground/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist/
