@@ -20,9 +20,7 @@
 
 // Fonts
 #let main-font = (
-  "Source Han Serif JP",
-  // shiroa's embedded font
-  "Libertinus Serif",
+  "Crimson Pro",
 )
 #let code-font = (
   "JuliaMono",

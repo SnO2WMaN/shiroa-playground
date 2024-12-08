@@ -21,18 +21,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Install "Julia Mono"
-        uses: SnO2WMaN/install-juliamono-action@v0.0.1
-      - name: Install cargo-hack from crates.io
+
+      - name: Install shiroa-cli from crates.io
         uses: baptiste0928/cargo-install@v3
         with:
           crate: shiroa-cli
           git: https://github.com/Myriad-Dreamin/shiroa
+
+      - name: Install "Crimson Pro"
+        uses: SnO2WMaN/install-fontsource-action@v0.0.1
+        with:
+          font-name: Crimson Pro
+
+      - name: Install "Julia Mono"
+        uses: SnO2WMaN/install-juliamono-action@v0.0.1
+
       - name: Print tools version
         run: |
           shiroa --version
+
       - name: Build Book
         run: shiroa build --path-to-root /shiroa-playground/
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist/

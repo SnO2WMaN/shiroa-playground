@@ -4,9 +4,12 @@
 #show: book
 
 #book-meta(
-  title: "shiroa",
+  title: "Formalized Formal Logic",
   summary: [
-    #prefix-chapter("sample-page.typ")[Hello, typst]
+    #prefix-chapter("index.typ")[About],
+
+    = Modal Logic
+    #prefix-chapter("ModalLogic/basic.typ")[Basic Results],
   ],
 )
 
