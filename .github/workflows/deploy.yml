@@ -29,7 +29,7 @@ jobs:
           git: https://github.com/Myriad-Dreamin/shiroa
 
       - name: Install "Crimson Pro"
-        uses: SnO2WMaN/install-fontsource-action@v0.0.1
+        uses: SnO2WMaN/install-fontsource-action@v0.0.2
         with:
           font-name: Crimson Pro
 
