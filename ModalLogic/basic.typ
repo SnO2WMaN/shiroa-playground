@@ -50,4 +50,4 @@ Some people formalize modal logic @bentzen_henkin-style_2021, @guo_verified_2023
   - Transitivity: $x R y mand y R z ==> x R z$ is $angle.l 0,2,1,0 angle.r$-confluency
 ]
 
-#bibliography("references.bib", style: "association-for-computing-machinery")
+#bibliography("/references.bib", style: "association-for-computing-machinery")
