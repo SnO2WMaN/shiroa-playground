@@ -8,8 +8,9 @@
   summary: [
     #prefix-chapter("index.typ")[About],
 
-    = Modal Logic
-    #prefix-chapter("ModalLogic/basic.typ")[Basic Results],
+    #prefix-chapter("ModalLogic/basic.typ")[Basic Results of Modal Logic],
+
+    #prefix-chapter("ProvabilityLogic/basic.typ")[Provability Logic],
   ],
 )
 

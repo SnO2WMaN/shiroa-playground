@@ -1,29 +1,9 @@
-#import "macros.typ": *
+#import "../macros.typ": *
 
-#let setup-authors(authors) = {
-  pad(
-    top: 0.5em,
-    bottom: 0.5em,
-    x: 2em,
-    grid(
-      columns: (1fr,) * calc.min(3, authors.len()),
-      gutter: 1em,
-      ..authors.map(author => align(center)[
-        *#author.name*
-      ]),
-    ),
-  )
-}
-#show: dtt.with()
-
-#setup-authors((
-  (
-    name: "SnO2WMaN",
-  ),
-))
-
-#set heading(numbering: "1.")
-#outline(depth: 2, indent: auto)
+#show: dtt.with(
+  title: "Basic Results of Modal Logic",
+  authors: ("SnO2WMaN",),
+)
 
 = Introduction
 
